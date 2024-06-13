@@ -64,9 +64,8 @@ var header = document.querySelector(".header");
 var headerBg = document.querySelector(".h-bg");
 window.addEventListener("scroll", function () {
   let y = window.scrollY;
-  if (y > 190 && allow) {
+  if (y > 100 && allow) {
     marqueContain.style.display = "none";
-    header.style.transition = "0.5s";
     header.style.top = "-180px";
     headerBg.classList.add("low-opacity");
     setTimeout(() => {
